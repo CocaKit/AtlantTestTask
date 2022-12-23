@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+	max-width: -webkit-fill-available;
+	max-width: -webkit-fill-available;
+}
+
+body {
+    background-color: lightgray;
+}
+
+button, input[type='submit'], input[type='button'] {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    transition: background-color 300ms linear;
+}
+
+button:hover, input[type='submit']:hover, input[type='button']:hover {
+    background-color: rgb(2, 2, 86);
+    cursor: pointer;
+}
+
+.unit {
+    background-color:white;
+    padding: 15px;  
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.large {
+    width: 95%;
+}
+
+.medium {
+    width: 45%;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.error-msg {
+    color: red;
+}
+
+.entity-form input, .entity-form button {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.entity-form input {
+    border-radius: 5px;
+}
+
+#list-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#list-table th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#list-table > table tr:nth-child(odd) {
+	background-color: #dddddd;
+}
+
+#list-pages {
+    width: fit-content;
+    display: flex;    
+}
+
+#list-pages form {
+    width: fit-content;
+    margin-left: 15px;
+    margin-right: 15px;
+}

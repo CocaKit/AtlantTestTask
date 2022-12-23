@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Human list{% endblock %}
+
+{% block body %}
+	<div id='list-table' class='unit large center'>
+		Total rows: {{ rowsCount }}
+		{{ htmlList|raw }}
+	</div>
+	<div id='list-pages' class='unit center'>
+		{{ htmlPages|raw }}
+	</div>
+    <form class='right' action="{{ path('app_human_new') }}">
+			<button class="btn" type="submit">New</button>
+	</form>
+{% endblock %}
